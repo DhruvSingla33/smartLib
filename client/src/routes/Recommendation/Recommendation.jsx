@@ -10,7 +10,7 @@ function Recommendation() {
             try {
                 const response = await fetch(baseUrl);
                 if(!response.ok) {
-                    throw new Error("Error fetching data for rec system");
+                    throw new Error("Error ec system");
                 }
                 const jsonData = await response.json();
                 setData(jsonData);
