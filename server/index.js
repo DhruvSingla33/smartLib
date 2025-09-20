@@ -6,12 +6,11 @@ const Book = require("./models/Books");
 const multer = require("multer");
 const fs = require("fs");
 let {PythonShell} = require('python-shell')
-let a =5;
+
 const app = express();
 const PORT = process.env.PORT || 8000;
 const path = require('path');
 
-// Construct the absolute path to the Python script using __dirname
 const scriptPath = path.join(__dirname, 'test.py');
 connectDB();
 app.use(cors());
@@ -77,9 +76,6 @@ app.get("/api/books/:slug", async (req, res) => {
   }
 });
 
-
-
-// add book now
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
@@ -158,9 +154,6 @@ app.delete("/api/books/:id", async(req,res) => {
 
 
 
-
-
-// TRIAL
 
 
 app.get("/", (req, res) => {
