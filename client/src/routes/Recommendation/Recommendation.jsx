@@ -21,7 +21,7 @@ function Recommendation() {
         fetchData();
 
 
-    }, [])
+    }, [data])
 
 
 
@@ -36,7 +36,7 @@ function Recommendation() {
                 <img className='w-full h-full rounded-xl contrast-150' src='https://wallpapercave.com/wp/wp13364331.png' />
                 <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center p-10 py-10'>
                 <h2 className="text-5xl py-2 text-violet-50 font-medium md:text-6xl font-serif animate-pulse"> Recommendation 💹</h2>
-                  <h3 className="text-2xl py-2 text-white font-mono">Made using ML algorithms 🤖</h3>
+                  <h3 className="text-2xl py-2 text-white font-mono">Made using ML algorithms </h3>
                 </div>
             </div>
 
